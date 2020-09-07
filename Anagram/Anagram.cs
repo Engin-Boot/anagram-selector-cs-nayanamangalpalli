@@ -48,8 +48,13 @@ namespace Anagram
 	}
             
         public List<string> SelectAnagrams(string word, List<string> candidates) {
-            //Insert the correct implementation here
-            return candidates;
+		
+		foreach(string candidateElement in candidates){
+
+			if(!PairIsAnagram(string word, string candidateElement){
+				_SelectedAnagramsList.Remove(candidateElement);
+			}
+            	return  candidates;
         }
     }
 }
