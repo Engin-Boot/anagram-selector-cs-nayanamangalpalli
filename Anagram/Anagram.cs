@@ -52,7 +52,7 @@ namespace Anagram
 		List<string> _SelectedAnagramsList = new List<string>();
 		foreach(string candidateElement in candidates){
 
-			if(!WordPairIsAnagram(word, candidateElement)){
+			if(WordPairIsAnagram(word, candidateElement)){
 				_SelectedAnagramsList.Add(candidateElement);
 			}
 		}
