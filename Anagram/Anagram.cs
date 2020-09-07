@@ -51,7 +51,7 @@ namespace Anagram
 		
 		foreach(string candidateElement in candidates){
 
-			if(!PairIsAnagram(string word, string candidateElement){
+			if(!PairIsAnagram(string word, string candidateElement)){
 				_SelectedAnagramsList.Remove(candidateElement);
 			}
             	return  candidates;
