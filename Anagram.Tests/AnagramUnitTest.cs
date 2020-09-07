@@ -15,12 +15,14 @@ namespace Anagram.Tests
             Assert.True(selector.WordPairIsAnagram("restful", "fluster"));
             Assert.True(selector.WordPairIsAnagram("forty five", "over fifty"));
         }
+        
         [Fact]
         public void ReportsNonAnagrams()
         {
             AnagramSelector selector = new AnagramSelector();
             Assert.False(selector.WordPairIsAnagram("something", "else"));
         }
+        
         [Fact]
         public void SelectsAnagramsOfAWord()
         {
