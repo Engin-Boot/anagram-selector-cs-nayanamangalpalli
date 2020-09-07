@@ -54,6 +54,7 @@ namespace Anagram
 			if(!PairIsAnagram(word, candidateElement)){
 				_SelectedAnagramsList.Remove(candidateElement);
 			}
+		}
             	return  candidates;
         }
     }
