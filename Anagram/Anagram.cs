@@ -49,13 +49,14 @@ namespace Anagram
             
         public List<string> SelectAnagrams(string word, List<string> candidates) {
 		
+		List<string> _SelectedAnagramsList = new List<string>();
 		foreach(string candidateElement in candidates){
 
 			if(!PairIsAnagram(word, candidateElement)){
-				_SelectedAnagramsList.Remove(candidateElement);
+				_SelectedAnagramsList.Add(candidateElement);
 			}
 		}
-            	return  candidates;
+            	return  _SelectedAnagramsList;
         }
     }
 }
